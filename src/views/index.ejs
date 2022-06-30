@@ -1,0 +1,16 @@
+<%- include('./partials/header')%>
+    <!--incluir encabezado-->
+
+    <body>
+        <div class="container text-center mt-5">
+            <%-include('./partials/products.ejs') %> <!--Mostrar la lista de productos con products.ejs-->
+            <div class="row">
+                <div class="col-md-6 offset-md-3">
+                    <%- include('./partials/formProduct')%><!--incluir formulario ingreso de productos -->
+                </div>
+            </div>
+        </div>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="../public/js/main.js"></script>
+    </body>
+    </html>
