@@ -1,0 +1,19 @@
+<%-include('./partials/header.ejs')%> <!--Incluir header-->
+
+<body>
+    <section class="container mt-5">   <!--Formulario de login-->
+        <div class="row">
+            <div class="col-md-4 offset-md-4 text-center">
+                <h2>Login</h2>
+                <form action="/"method="post"class="form-login-container mt-5">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text"placeholder="Ingrese su Nombre" id="nombre"name="nombre"required class="form-control text-center"autocomplete="off">
+                    <section class="mt-3">
+                        <button class="btn btn-success btn-login">Ingresar</button>
+                    </section>
+                </form>
+            </div>  
+        </div>
+    </section>
+</body>
+</html>

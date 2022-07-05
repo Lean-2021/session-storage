@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
 body {
     background: #D3CCE3;
     /* fallback for old browsers */
@@ -94,4 +95,46 @@ body {
     width:50px;
     height: 50px;
     border-radius: 50%;
+}
+
+/* estilos menu login */
+.form-login-container{ /*contenedor formulario login*/
+    border:2px solid blue; 
+    padding:30px;
+    padding-top:15px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px 1px grey;
+    background-color: lightblue;
+}
+.form-login-container label{  /*etiqueta label de formulario*/
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.btn-login{/*estilo boton formulario login */
+    width:100%
+}
+
+.container-bienvenido{   /*estilo texto de bienvenida*/
+    background-color: antiquewhite;
+    box-shadow: 2px 0 4px 1px black;
+}
+.section-bienvenido{
+    padding:.5em;
+}
+.section-bienvenido h1{  /*fuente titulo de bienvenida*/
+    font-family: 'Patua One', cursive;
+}
+.name-bienvenido{  /*texto nombre bienvenido*/
+    color:blue;
+    text-transform: capitalize;
+    align-self: center;
+}
+.btn-salir{  /*botón salir*/
+    height: 40px;
+    align-self: center;
+}
+.text-logout{  /*texto logout*/
+    color:blue;
+    text-transform: capitalize;
 }

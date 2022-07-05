@@ -2,6 +2,16 @@
     <!--incluir encabezado-->
 
     <body>
+        <div class="container-fluid container-bienvenido">
+            <div class="row section-bienvenido">
+                <div class="col-m-12 d-flex justify-content-between">
+                    <h1>Bienvenido <span class="ms-1 name-bienvenido"><%=nombre%></span></h1>
+                    <form action="/logout"method="post"class="mt-2">
+                        <button class="btn btn-danger btn-salir">Salir</button>
+                    </form>
+                </div>
+            </div>
+        </div>
         <div class="container text-center mt-5">
             <%-include('./partials/products.ejs') %> <!--Mostrar la lista de productos con products.ejs-->
             <div class="row">
