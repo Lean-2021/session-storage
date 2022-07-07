@@ -7,5 +7,15 @@
             </div>
         </div>
     </div>
+
+    <script>   // redireccionar a pagina de login luego de mostrar mensaje de Hasta Luego
+        setTimeout(()=>{
+            fetch('http://localhost:8080/logout',{
+                method:'post'
+            })
+            .then(()=>location.href='/login')
+            .catch(()=>console.log('Error al redireccionar'))
+        },2000);
+    </script>
 </body>
 </html>

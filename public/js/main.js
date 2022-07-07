@@ -9,6 +9,11 @@ const avatar = document.getElementById("avatar");
 const text = document.getElementById("text");
 const showMessage = document.getElementById("showMessage");
 const formChat = document.getElementById("formChat");
+const btnLogout = document.getElementById("btnLogout");
+
+btnLogout.addEventListener("click", () => {
+  location.href = "/logout";
+});
 
 const showProducts = (data) => {
   if (data.length === 0) {
